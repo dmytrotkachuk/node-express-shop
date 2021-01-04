@@ -1,0 +1,22 @@
+{
+  "name": "express-shop",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmytrotkachuk/node-express-shop.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node inde.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Dmytro Tkachuk <dmytrotkachuk.dev@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0"
+  }
+}
