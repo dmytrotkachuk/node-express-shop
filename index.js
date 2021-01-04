@@ -7,20 +7,22 @@ const hbs = exphbs.create({
     extname:'hbs'
 })
 
+const homeRoutes = require('./routes/home')
+const coursesRoutes = require('./routes/courses')
+const addRoutes = require('./routes/add')
+
 app.engine('hbs', hbs.engine)
 //set extname
 app.set('view engine', 'hbs')
 //set dirname
 app.set('views', 'views')
 
-app.get('/', (req,res,next)=>{
-    res.status(200).render('index')
-})
-
-app.get('/about', (req,res,next)=>{
-    res.status(200).render('about')
-})
-
+app.use(express.static('public'))
+app.use(express.urlencoded({extended:true}))
+// app.use(express.json())
+app.use('/',homeRoutes)
+app.use('/courses',coursesRoutes)
+app.use('/add',addRoutes)
 
 
 

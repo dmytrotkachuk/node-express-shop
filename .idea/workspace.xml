@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef7afe5f-0297-49e1-8865-b89ad7846a35" name="Default Changelist" comment="" />
+    <list default="true" id="ef7afe5f-0297-49e1-8865-b89ad7846a35" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/courses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/add.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/courses.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/navbar.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/footer.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/footer.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/head.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/head.hbs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,7 +43,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -31,11 +56,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609745951424</updated>
-      <workItem from="1609745954388" duration="305000" />
+      <workItem from="1609745954388" duration="6527000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
