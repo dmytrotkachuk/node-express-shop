@@ -10,6 +10,7 @@ const hbs = exphbs.create({
 const homeRoutes = require('./routes/home')
 const coursesRoutes = require('./routes/courses')
 const addRoutes = require('./routes/add')
+const cartRoutes = require('./routes/cart')
 
 app.engine('hbs', hbs.engine)
 //set extname
@@ -19,14 +20,15 @@ app.set('views', 'views')
 
 app.use(express.static('public'))
 app.use(express.urlencoded({extended:true}))
+
+//Routes
 app.use('/',homeRoutes)
 app.use('/courses',coursesRoutes)
 app.use('/add',addRoutes)
-
+app.use('/cart', cartRoutes)
 
 
 const PORT = 3000 || process.env.PORT
-
 app.listen(3000, ()=>{
     console.log(`Server started on port: ${PORT}`)
 })
