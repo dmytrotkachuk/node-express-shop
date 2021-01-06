@@ -2,7 +2,7 @@ const {Router} = require('express')
 const router = new Router()
 const Course = require('../models/course')
 
-router.get('/', (req,res,next)=>{
+router.get('/', (req,res)=>{
     res.status(200).render('add', {
         title:'Add Course',
         isAdd:true

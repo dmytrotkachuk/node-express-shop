@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef7afe5f-0297-49e1-8865-b89ad7846a35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/cart.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/cart.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/courses.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/courses.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/cart.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/cart.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/courses.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/head.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/head.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/partials/navbar.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/navbar.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +42,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -70,7 +72,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609745951424</updated>
-      <workItem from="1609745954388" duration="18785000" />
+      <workItem from="1609745954388" duration="33760000" />
+      <workItem from="1609930172849" duration="4653000" />
     </task>
     <servers />
   </component>
@@ -87,5 +90,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
