@@ -1,11 +1,15 @@
 const express = require('express')
 const path = require('path')
 const mongoose = require('mongoose')
-const exphbs = require('express-handlebars')
+const Handlebars = require('handlebars')
+const expressHandlebars = require('express-handlebars');
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
 const app = express()
-const hbs = exphbs.create({
+
+const hbs = expressHandlebars.create({
     defaultLayout: 'main',
-    extname:'hbs'
+    extname:'hbs',
+    handlebars: allowInsecurePrototypeAccess(Handlebars)
 })
 
 const homeRoutes = require('./routes/home')
@@ -13,9 +17,9 @@ const coursesRoutes = require('./routes/courses')
 const addRoutes = require('./routes/add')
 const cartRoutes = require('./routes/cart')
 
-app.engine('hbs', hbs.engine)
-//set extname
-app.set('view engine', 'hbs')
+// app.engine('handlebars', hbs.engine)
+app.engine('hbs', hbs.engine);
+app.set('view engine', 'hbs');
 //set dirname
 app.set('views', 'views')
 
@@ -28,14 +32,16 @@ app.use('/courses',coursesRoutes)
 app.use('/add',addRoutes)
 app.use('/cart', cartRoutes)
 
-const MONGO_URI = 'mongodb+srv://dmytro:7IDhTnkz6w0kWH5K@cluster-shop.0g0se.mongodb.net/test'
+const MONGO_URI = 'mongodb+srv://dmytro:7IDhTnkz6w0kWH5K@cluster-shop.0g0se.mongodb.net/shop'
 
 const PORT = 3000 || process.env.PORT
 
 async function start (){
     try {
         await mongoose.connect(MONGO_URI,{
-            useNewUrlParser:true
+            useNewUrlParser:true,
+            useUnifiedTopology: true,
+            useFindAndModify: false,
         })
         console.log('DB connected')
     } catch (e) {
