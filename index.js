@@ -28,22 +28,10 @@ app.use('/courses',coursesRoutes)
 app.use('/add',addRoutes)
 app.use('/cart', cartRoutes)
 
-const MONGO_URI = 'mongodb+srv://dmytro:7IDhTnkz6w0kWH5K@cluster-shop.0g0se.mongodb.net/test'
 
 const PORT = 3000 || process.env.PORT
 
-async function start (){
-    try {
-        await mongoose.connect(MONGO_URI,{
-            useNewUrlParser:true
-        })
-        console.log('DB connected')
-    } catch (e) {
-        console.log(e)
-    }
-}
 
-start()
 
 
 app.listen(3000, ()=>{
