@@ -1,5 +1,5 @@
 const {Router} = require('express')
-const router = new Router()
+const router =  Router()
 
 
 router.get('/', (req,res,next)=>{
